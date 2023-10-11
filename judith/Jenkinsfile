@@ -1,0 +1,16 @@
+pipeline{
+    agent any
+    stages{
+        stage(' for demo'){
+            steps{
+                echo "hello john"
+        
+            }
+        }
+        stage('more test'){
+            steps{
+                echo "singing"
+            }
+        }
+    }
+}

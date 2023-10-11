@@ -11,6 +11,17 @@ pipeline{
                 echo "hello devops"
             }
         }
+        stage('deploy stage'){
+            steps{
+                sh 'whoami'
+            
+            }
+        }
+        stage('build'){
+            steps{
+                sh 'pwd'
+            }
+        }
         
     }
 }
